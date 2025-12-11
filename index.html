@@ -1,113 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OLVEXA - Suplementos Premium</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #222;
-    }
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-    .section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-    .card {
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 25px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.07);
-    }
-    .card h3 {
-      margin-top: 10px;
-      font-size: 1.3rem;
-    }
-    .footer {
-      background: #f1f5f9;
-      text-align: center;
-      padding: 30px;
-      margin-top: 60px;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>OLVEXA</h1>
-    <p>Suplementos premium diseñados para bienestar real</p>
-  </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olvexa | Suplementos Premium</title>
 
-  <section class="hero">
-    <div>
-      <h2>Bienestar que se siente</h2>
-      <p>Formulaciones limpias, veganas y enfocadas en resultados para energía, descanso y equilibrio.</p>
-      <a href="#productos" class="btn">Ver productos</a>
-    </div>
-  </section>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            color: #0B4A86;
+        }
 
-  <section class="section" id="productos">
-    <h2>Nuestros Productos</h2>
-    <p>Ingredientes puros, sin rellenos y con la calidad que tu cuerpo merece.</p>
+        /* Encabezado */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            z-index: 1000;
+        }
 
-    <div class="products">
-      <div class="card">
-        <img src="https://via.placeholder.com/200" alt="Glicinato de Magnesio" />
-        <h3>Glicinato de Magnesio</h3>
-        <p>Descanso profundo, relajación muscular y mejor recuperación.</p>
-      </div>
+        header img {
+            height: 50px;
+        }
 
-      <div class="card">
-        <img src="https://via.placeholder.com/200" alt="Citrato de Potasio" />
-        <h3>Citrato de Potasio</h3>
-        <p>Equilibrio mineral, hidratación celular y soporte cardiovascular.</p>
-      </div>
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #0B4A86;
+            font-weight: 600;
+            font-size: 16px;
+        }
 
-      <div class="card">
-        <img src="https://via.placeholder.com/200" alt="Kit Magnesio + Potasio" />
-        <h3>Kit Magnesio + Potasio</h3>
-        <p>Combinación perfecta para energía sostenida y bienestar completo.</p>
-      </div>
-    </div>
-  </section>
+        nav a:hover {
+            color: #D4A537;
+        }
 
-  <section class="section">
-    <h2>¿Por qué OLVEXA?</h2>
-    <p>Nuestros suplementos están diseñados para ofrecer la máxima absorción y efectividad, respaldados por estándares de calidad premium.</p>
-  </section>
+        /* Hero */
+        .hero {
+            margin-top: 100px;
+            text-align: center;
+            padding: 120px 20px;
+            background: white;
+        }
 
-  <div class="footer">
-    © 2025 OLVEXA. Todos los derechos reservados.
-  </div>
-</body>
-</html>
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #0B4A86;
+        }
+
+        .hero span {
+            color: #D4A537;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #444;
+        }
+
+        /* Secciones */
+        section {
+            padding: 80px 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0B4A86;
+        }
+
+        .gold-line {
+            width: 80px;
+            height: 4px;
+            background: #D4A537;
+            margin: 10px auto 40px;
+            border-radius: 2px;
+        }
+
+        /* Productos */
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .producto-card {
+            background: #ffffff;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            bo
